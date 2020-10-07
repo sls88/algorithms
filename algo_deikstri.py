@@ -38,6 +38,7 @@ def find_lowest_cost_node(costs):
 
 node = find_lowest_cost_node(costs)
 while node is not None:
+    print(node)
     cost = costs[node]
     neighbors = graph[node]
     for i in neighbors.keys():
@@ -51,4 +52,4 @@ while node is not None:
 print()
 print(costs)
 print(parents)
-
+print(node)
